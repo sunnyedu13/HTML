@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Employee Table</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    table {
+      width: 1800px;
+      border-collapse: collapse;
+      min-width: 100%;
+      table-layout: fixed;
+    }
+
+    thead th {
+      position: sticky;
+      top: 0;
+      background-color: #2c3e50;
+      color: white;
+      font-weight: bold;
+      z-index: 2;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+      word-wrap: break-word;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tbody tr:hover {
+      background-color: #e0f7fa;
+    }
+
+    td[colspan], th[colspan] {
+      background-color: #ecf0f1;
+      font-weight: bold;
+    }
+
+    .sticky-col {
+      position: sticky;
+      left: 0;
+      background-color: #f1f1f1;
+      color: #155724;
+      z-index: 1;
+      font-weight: bold;
+    }
+
+    .highlight {
+      background-color: #ffe0b2;
+    }
+
+    .success {
+      background-color: #d4edda;
+      color: #155724;
+      font-weight: bold;
+    }
+
+    .warning {
+      background-color: #fff3cd;
+      color: #856404;
+      font-weight: bold;
+    }
+
+    .danger {
+      background-color: #f8d7da;
+      color: #721c24;
+      font-weight: bold;
+    }
+
+    tfoot {
+      background-color: #34495e;
+      color: white;
+      font-weight: bold;
+    }
+
+    tfoot td {
+      border-top: 2px solid #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="3" class="sticky-col">Emp ID</th>
+        <th rowspan="3" class="sticky-col">Name</th>
+        <th colspan="6" class="sticky-col">Performance Review</th>
+        <th colspan="4" class="sticky-col">Trainings</th>
+        <th colspan="3" class="sticky-col">Leaves</th>
+        <th colspan="4" class="sticky-col">Projects</th>
+        <th rowspan="3">Overall Rating</th>
+        <th rowspan="3">Status</th>
+        <th rowspan="3">Remarks</th>
+      </tr>
+      <tr>
+        <th colspan="2" class="sticky-col">Q1</th>
+        <th colspan="2" class="sticky-col">Q2</th>
+        <th colspan="2" class="sticky-col">Q3</th>
+        <th colspan="2" class="sticky-col">Completed</th>
+        <th colspan="2" class="sticky-col">Pending</th>
+        <th rowspan="2">Casual</th>
+        <th rowspan="2">Sick</th>
+        <th rowspan="2">Unpaid</th>
+        <th rowspan="2">Ongoing</th>
+        <th rowspan="2">Completed</th>
+        <th rowspan="2">Late</th>
+        <th rowspan="2">Client Rating</th>
+      </tr>
+      <tr>
+        <th>Score</th><th>Feedback</th>
+        <th>Score</th><th>Feedback</th>
+        <th>Score</th><th>Feedback</th>
+        <th>Name</th><th>Date</th>
+        <th>Name</th><th>Due</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="sticky-col">E001</td>
+        <td class="sticky-col">Aarav Mehta</td>
+        <td>4.5</td><td>Excellent</td>
+        <td>4.2</td><td>Very Good</td>
+        <td>4.6</td><td>Outstanding</td>
+        <td>Leadership</td><td>Feb 2025</td>
+        <td>Cloud Computing</td><td>July 2025</td>
+        <td>2</td><td>1</td><td>0</td>
+        <td>2</td><td>5</td><td>0</td><td>5.0</td>
+        <td class="success">Active</td>
+        <td>Excellent performer with leadership potential.</td>
+      </tr>
+
+      <tr>
+        <td class="sticky-col">E002</td>
+        <td class="sticky-col">Sanya Kapoor</td>
+        <td>4.0</td><td>Good</td>
+        <td>3.9</td><td>Average</td>
+        <td>4.1</td><td>Good</td>
+        <td>Time Mgmt</td><td>Mar 2025</td>
+        <td>AI Ethics</td><td>Aug 2025</td>
+        <td>1</td><td>0</td><td>1</td>
+        <td>1</td><td>3</td><td>1</td><td>4.2</td>
+        <td class="warning">On Watch</td>
+        <td>Needs improvement in punctuality.</td>
+      </tr>
+
+      <tr>
+        <td class="sticky-col">E003</td>
+        <td class="sticky-col">Rajeev Singh</td>
+        <td>3.0</td><td>Poor</td>
+        <td>2.8</td><td>Needs Work</td>
+        <td>3.5</td><td>Fair</td>
+        <td>Communication</td><td>Jan 2025</td>
+        <td>DevOps</td><td>Oct 2025</td>
+        <td>0</td><td>2</td><td>3</td>
+        <td>0</td><td>2</td><td>2</td><td>3.2</td>
+        <td class="danger">Probation</td>
+        <td>Under performance review.</td>
+      </tr>
+
+      <tr>
+        <td class="sticky-col">E004</td>
+        <td class="sticky-col">Neha Verma</td>
+        <td>4.9</td><td>Excellent</td>
+        <td>4.8</td><td>Excellent</td>
+        <td>5.0</td><td>Excellent</td>
+        <td>Team Building</td><td>Feb 2025</td>
+        <td>Azure</td><td>May 2025</td>
+        <td>0</td><td>0</td><td>0</td>
+        <td>3</td><td>4</td><td>0</td><td>5.0</td>
+        <td class="success">Promoted</td>
+        <td>Top performer. Promoted to Team Lead.</td>
+      </tr>
+
+      <tr>
+        <td class="sticky-col">E005</td>
+        <td class="sticky-col">Mohit Khanna</td>
+        <td colspan="6">On Sabbatical (Jan–June 2025)</td>
+        <td colspan="4">N/A</td>
+        <td>0</td><td>0</td><td>0</td>
+        <td>0</td><td>0</td><td>0</td><td>N/A</td>
+        <td class="warning">Inactive</td>
+        <td>Approved long leave.</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Average</td>
+        <td>4.1</td><td>-</td>
+        <td>3.9</td><td>-</td>
+        <td>4.3</td><td>-</td>
+        <td colspan="4">-</td>
+        <td>0.6</td><td>0.6</td><td>0.8</td>
+        <td>1.2</td><td>2.8</td><td>0.6</td><td>4.35</td>
+        <td colspan="2">-</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+</body>
+</html>

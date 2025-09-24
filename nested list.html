@@ -1,0 +1,311 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Complex Nested List</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+      padding-left: 20px;
+    }
+
+    ul li, ol li {
+      margin-bottom: 8px;
+      line-height: 1.7;
+    }
+
+    ul li {
+      list-style-type: square;
+    }
+
+    ol li {
+      list-style-type: decimal;
+    }
+
+    .category {
+      color: #1a237e;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .subcategory {
+      color: #2d3436;
+      font-style: italic;
+      font-size: 1.05em;
+    }
+
+    .highlight {
+      background-color: #e3f2fd;
+      padding: 5px 10px;
+      border-left: 5px solid #2196f3;
+      border-radius: 4px;
+    }
+
+    .deep-level {
+      color: #6a1b9a;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Advanced & Complex Nested List</h1>
+
+<ul>
+  <li class="category">Web Development
+    <ol>
+      <li class="subcategory">Frontend
+        <ul>
+          <li class="highlight">HTML
+            <ul>
+              <li>Structure of HTML Document</li>
+              <li>Forms and Input Validation</li>
+              <li>Media Elements: Audio, Video, iframe</li>
+              <li>Meta Tags and SEO Basics</li>
+            </ul>
+          </li>
+          <li class="highlight">CSS
+            <ul>
+              <li>Selectors: Simple, Advanced</li>
+              <li>Positioning: Absolute, Relative, Sticky</li>
+              <li>Box Model, Overflow</li>
+              <li>Media Queries and Responsive Design</li>
+              <li>Animations and Transitions</li>
+            </ul>
+          </li>
+          <li class="highlight">JavaScript
+            <ul>
+              <li>DOM Manipulation</li>
+              <li>Events and Event Delegation</li>
+              <li>ES6+ Features
+                <ul>
+                  <li>Arrow Functions</li>
+                  <li>Spread & Rest Operators</li>
+                  <li>Destructuring</li>
+                  <li>Promises & Async/Await</li>
+                </ul>
+              </li>
+              <li>Fetch API & JSON</li>
+              <li>Browser Storage: Local, Session</li>
+            </ul>
+          </li>
+          <li>Frameworks & Libraries
+            <ul>
+              <li>React.js
+                <ul>
+                  <li>Components and Props</li>
+                  <li>Hooks: useState, useEffect</li>
+                  <li>React Router</li>
+                  <li>State Management with Redux</li>
+                </ul>
+              </li>
+              <li>Bootstrap</li>
+              <li>Tailwind CSS</li>
+              <li>jQuery (Legacy)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="subcategory">Backend
+        <ul>
+          <li>Node.js</li>
+          <li>Express.js
+            <ul>
+              <li>Routing</li>
+              <li>Middlewares</li>
+              <li>Request Handling</li>
+            </ul>
+          </li>
+          <li>Authentication
+            <ul>
+              <li>JWT</li>
+              <li>OAuth2</li>
+              <li>Session & Cookies</li>
+            </ul>
+          </li>
+          <li>APIs
+            <ul>
+              <li>REST API</li>
+              <li>GraphQL (Intro)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="subcategory">Databases
+        <ul>
+          <li>MySQL
+            <ul>
+              <li>Database Design</li>
+              <li>Normalization</li>
+              <li>Joins & Indexes</li>
+            </ul>
+          </li>
+          <li>MongoDB
+            <ul>
+              <li>CRUD Operations</li>
+              <li>Aggregation Pipeline</li>
+              <li>Mongoose ODM</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+
+  <li class="category">Graphic Designing
+    <ol>
+      <li>Tools
+        <ul>
+          <li>Photoshop
+            <ul>
+              <li>Layers, Filters, Smart Objects</li>
+              <li>Color Correction</li>
+              <li>Banner Design</li>
+            </ul>
+          </li>
+          <li>Illustrator
+            <ul>
+              <li>Vector Art</li>
+              <li>Typography Design</li>
+              <li>Logo Design</li>
+            </ul>
+          </li>
+          <li>Figma
+            <ul>
+              <li>UI/UX Wireframing</li>
+              <li>Prototyping</li>
+              <li>Design Systems</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Principles
+        <ul>
+          <li>Typography</li>
+          <li>Color Theory</li>
+          <li>Composition & Alignment</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+
+  <li class="category">Office Tools
+    <ol>
+      <li>MS Word
+        <ul>
+          <li>Page Layout & Styles</li>
+          <li>Mail Merge</li>
+          <li>SmartArt, Charts, Tables</li>
+        </ul>
+      </li>
+      <li>MS Excel
+        <ul>
+          <li>Formulas
+            <ul>
+              <li>SUM, AVERAGE, IF</li>
+              <li>VLOOKUP, HLOOKUP</li>
+              <li>INDEX & MATCH</li>
+            </ul>
+          </li>
+          <li>Data Management
+            <ul>
+              <li>Sorting, Filtering</li>
+              <li>Data Validation</li>
+              <li>Conditional Formatting</li>
+            </ul>
+          </li>
+          <li>Pivot Tables</li>
+        </ul>
+      </li>
+      <li>MS PowerPoint
+        <ul>
+          <li>Slide Master</li>
+          <li>Transitions & Animations</li>
+          <li>Presentation Techniques</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+
+  <li class="category">Programming Languages
+    <ol>
+      <li>Python
+        <ul>
+          <li>Basics & Syntax</li>
+          <li>Object-Oriented Programming</li>
+          <li>Libraries
+            <ul>
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li>Matplotlib</li>
+              <li>Flask (Web)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Java
+        <ul>
+          <li>OOP Concepts</li>
+          <li>JDBC</li>
+          <li>Servlets & JSP</li>
+        </ul>
+      </li>
+      <li>C++
+        <ul>
+          <li>Data Structures</li>
+          <li>File Handling</li>
+          <li>STL</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+
+  <li class="category">Additional Topics
+    <ol>
+      <li>Version Control
+        <ul>
+          <li>Git Basics</li>
+          <li>GitHub Collaboration</li>
+          <li>Branches & Merging</li>
+        </ul>
+      </li>
+      <li>Cybersecurity
+        <ul>
+          <li>Basic Threats</li>
+          <li>Password Security</li>
+          <li>Phishing & Malware</li>
+        </ul>
+      </li>
+      <li>AI & ML Basics
+        <ul>
+          <li>Supervised Learning</li>
+          <li>Unsupervised Learning</li>
+          <li>Tools: TensorFlow, Scikit-learn</li>
+        </ul>
+      </li>
+      <li>Cloud Platforms
+        <ul>
+          <li>AWS: EC2, S3</li>
+          <li>Azure: Functions, Storage</li>
+          <li>Google Cloud: Firebase, App Engine</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+</body>
+</html>
+
+
